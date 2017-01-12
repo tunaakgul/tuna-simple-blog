@@ -1,7 +1,7 @@
 # tuna-simple-blog
 a simple blog which is coded node.js
 
-firtsly import nodeblog.sql to your database.
+firtsly import nodeblog.sql to your mysql database.
 
 then you can start use it.
 
