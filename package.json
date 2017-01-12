@@ -1,0 +1,11 @@
+{
+  "name": "simpleblog",
+  "version": "1.0.0",
+  "description": "tuna simple blog",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tunaakgul",
+  "license": "ISC"
+}

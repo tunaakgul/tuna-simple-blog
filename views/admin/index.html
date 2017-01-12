@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Panel - Tuna Simple Blog</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="./js/js.cookie.js"></script>
+	<script src="./js/admin.js"></script>
+</head>
+<body>
+	<div class="container" style="background-color:#a8a8a8">
+		<h3>Tuna Simple Blog<br />
+	        <small>Admin Panel</small>
+	    </h3>
+	    <br />
+
+		<div class="row">
+	        <div class="col-sm-2">
+	            <div class="navbar navbar-inverse" style="background-color:#BDBDBD">
+	            	<div class="container-fluid">
+	            		<div class="navbar-header">
+	            			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+	            				<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+	            			</button>
+	            			<a class="navbar-brand" href="#" style="color:#23527C;font-weight:bold">Menu</a>
+	            		</div>
+	            		<div class="collapse navbar-collapse" id="navbar-menu">
+	            			<ul class="nav navbar-nav">
+	            				<li><a href="javascript:;" id="btnHome">Home</a></li>
+			                    <li><a href="javascript:;" id="btnPosts">Posts</a></li>
+			                    <li><a href="javascript:;" id="btnComments">Comments</a></li>
+			                    <li class="nav-divider"></li>
+			                    <li><a href="javascript:;" id="btnSignOut"><i class="glyphicon glyphicon-off"></i> Sign Out</a></li>
+	            			</ul>
+	            		</div>
+	            	</div>
+	            </div>
+	        </div>
+	        <div class="well col-lg-10 col-md-10 col-sm-2" id="parentWell" style="overflow:auto;background-color:#bdbdbd">
+	        </div>
+	    </div>
+		<div class="container" id="footer">
+			<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		    <%- footer %>
+		</div>
+	</div>
+</body>
+</html>
