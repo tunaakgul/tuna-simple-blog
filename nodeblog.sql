@@ -2,10 +2,10 @@
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Anamakine: 127.0.0.1
--- Üretim Zamanı: 12 Oca 2017, 17:24:43
--- Sunucu sürümü: 5.6.17
--- PHP Sürümü: 5.5.12
+-- Host: 127.0.0.1
+-- Production Time: 12 Oca 2017, 17:24:43
+-- Server Version: 5.6.17
+-- PHP Version: 5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Veritabanı: `nodeblog`
+-- Database: `nodeblog`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `comment`
+-- Table structure for `comment`
 --
 
 CREATE TABLE IF NOT EXISTS `comment` (
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `comment` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci AUTO_INCREMENT=10 ;
 
 --
--- Tablo döküm verisi `comment`
+-- Table data `comment`
 --
 
 INSERT INTO `comment` (`id`, `name`, `mail`, `postid`, `content`, `date`, `website`, `isActive`) VALUES
@@ -54,7 +54,7 @@ INSERT INTO `comment` (`id`, `name`, `mail`, `postid`, `content`, `date`, `websi
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `post`
+-- Table structure for `post`
 --
 
 CREATE TABLE IF NOT EXISTS `post` (
@@ -67,18 +67,24 @@ CREATE TABLE IF NOT EXISTS `post` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci AUTO_INCREMENT=10 ;
 
 --
--- Tablo döküm verisi `post`
+-- Tablo data `post`
 --
 
 INSERT INTO `post` (`id`, `header`, `content`, `uid`, `date`) VALUES
-(7, 'asdsad', 'sadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdas', 1, '11/10/2016'),
-(8, 'asdsad', 'sadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdassadasdasdasdas', 1, '11/10/2016'),
-(9, 'new post', 'new post content<p>new post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post contentnew post content', 1, '12/01/2017');
+(7, 'Sample Blog Header', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum feugiat neque sit amet scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce pretium est vel ipsum consectetur condimentum non vel ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vel libero id neque dapibus ultricies nec sed ligula. Sed tempor mi tellus, vitae rutrum nisl posuere et. Donec rutrum imperdiet tempus. Etiam in ante sollicitudin lectus ultricies maximus. Sed placerat justo enim, vel ornare elit venenatis sit amet. Phasellus ut augue vel ante mattis congue. Aliquam magna ligula, porttitor quis interdum eget, fringilla non dolor. Cras volutpat aliquam lacus sit amet ultrices. Mauris vitae imperdiet elit. Cras maximus rutrum scelerisque. Nam bibendum orci odio, a euismod mauris lacinia ut.
+
+Etiam sollicitudin quis massa at pharetra. Morbi dapibus justo urna, consectetur egestas enim consequat vitae. Morbi pretium lorem quis velit sollicitudin molestie. Suspendisse porttitor posuere lectus a fermentum. Proin eros orci, hendrerit eu placerat non, hendrerit non erat. Nam sagittis, leo et accumsan fringilla, nisi purus feugiat sem, quis sollicitudin turpis lectus eu mi. Proin tincidunt mi neque, eget dignissim purus condimentum non. Aenean quis eros mauris.', 1, '11/10/2016'),
+(8, 'Sample Blog Header 2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum feugiat neque sit amet scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce pretium est vel ipsum consectetur condimentum non vel ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vel libero id neque dapibus ultricies nec sed ligula. Sed tempor mi tellus, vitae rutrum nisl posuere et. Donec rutrum imperdiet tempus. Etiam in ante sollicitudin lectus ultricies maximus. Sed placerat justo enim, vel ornare elit venenatis sit amet. Phasellus ut augue vel ante mattis congue. Aliquam magna ligula, porttitor quis interdum eget, fringilla non dolor. Cras volutpat aliquam lacus sit amet ultrices. Mauris vitae imperdiet elit. Cras maximus rutrum scelerisque. Nam bibendum orci odio, a euismod mauris lacinia ut.
+
+Etiam sollicitudin quis massa at pharetra. Morbi dapibus justo urna, consectetur egestas enim consequat vitae. Morbi pretium lorem quis velit sollicitudin molestie. Suspendisse porttitor posuere lectus a fermentum. Proin eros orci, hendrerit eu placerat non, hendrerit non erat. Nam sagittis, leo et accumsan fringilla, nisi purus feugiat sem, quis sollicitudin turpis lectus eu mi. Proin tincidunt mi neque, eget dignissim purus condimentum non. Aenean quis eros mauris.', 1, '11/10/2016'),
+(9, 'Sample Blog Header 3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum feugiat neque sit amet scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce pretium est vel ipsum consectetur condimentum non vel ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas vel libero id neque dapibus ultricies nec sed ligula. Sed tempor mi tellus, vitae rutrum nisl posuere et. Donec rutrum imperdiet tempus. Etiam in ante sollicitudin lectus ultricies maximus. Sed placerat justo enim, vel ornare elit venenatis sit amet. Phasellus ut augue vel ante mattis congue. Aliquam magna ligula, porttitor quis interdum eget, fringilla non dolor. Cras volutpat aliquam lacus sit amet ultrices. Mauris vitae imperdiet elit. Cras maximus rutrum scelerisque. Nam bibendum orci odio, a euismod mauris lacinia ut.
+
+Etiam sollicitudin quis massa at pharetra. Morbi dapibus justo urna, consectetur egestas enim consequat vitae. Morbi pretium lorem quis velit sollicitudin molestie. Suspendisse porttitor posuere lectus a fermentum. Proin eros orci, hendrerit eu placerat non, hendrerit non erat. Nam sagittis, leo et accumsan fringilla, nisi purus feugiat sem, quis sollicitudin turpis lectus eu mi. Proin tincidunt mi neque, eget dignissim purus condimentum non. Aenean quis eros mauris.', 1, '12/01/2017');
 
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `token`
+-- Table structure for `token`
 --
 
 CREATE TABLE IF NOT EXISTS `token` (
@@ -89,7 +95,7 @@ CREATE TABLE IF NOT EXISTS `token` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci AUTO_INCREMENT=19 ;
 
 --
--- Tablo döküm verisi `token`
+-- Tablo data `token`
 --
 
 INSERT INTO `token` (`id`, `uid`, `token`) VALUES
@@ -115,7 +121,7 @@ INSERT INTO `token` (`id`, `uid`, `token`) VALUES
 -- --------------------------------------------------------
 
 --
--- Tablo için tablo yapısı `user`
+-- Table structure for `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -126,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_turkish_ci AUTO_INCREMENT=2 ;
 
 --
--- Tablo döküm verisi `user`
+-- Tablo data `user`
 --
 
 INSERT INTO `user` (`id`, `uname`, `pass`) VALUES
