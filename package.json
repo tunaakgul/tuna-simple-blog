@@ -1,11 +1,26 @@
 {
-  "name": "simpleblog",
-  "version": "1.0.0",
+  "name": "tuna-simple-blog",
+  "version": "1.0.1",
   "description": "tuna simple blog",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "tunaakgul",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tunaakgul/tuna-simple-blog.git"
+  },
+  "keywords": [
+    "nodejs",
+    "blog",
+    "js",
+    "simple",
+    "blog"
+  ],
+  "bugs": {
+    "url": "https://github.com/tunaakgul/tuna-simple-blog/issues"
+  },
+  "homepage": "https://github.com/tunaakgul/tuna-simple-blog#readme"
 }
