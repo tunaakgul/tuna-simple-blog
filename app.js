@@ -28,6 +28,10 @@ app.get("/admin",function(req,res){
 	res.render("admin/index.html",{footer:util.footer()})
 })
 
+app.get("*",function(req,res){
+	res.render("404.html",{footer:util.footer(),header:util.header()})
+})
+
 app.post("/admin/login",actrl.login)
 
 app.post("/admin/sendPost",util.tokenToUid,actrl.sendPost)
